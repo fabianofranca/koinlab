@@ -15,9 +15,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         repositories.forEach {
             val text = if (txtHello.text.isEmpty())
-                it.description()
+                it.description
             else
-                "${txtHello.text}\n${it.description()}"
+                "${txtHello.text}\n${it.description}"
 
             txtHello.text = text
         }
